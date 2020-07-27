@@ -22,7 +22,7 @@ class SearchWindow extends Component{
           console.log('the title searched for is ' + (this.state.title));
 
               const encodedSearchQuery = (this.state.title).replace(" ", "+");
-              const key = "&key=AIzaSyAn_w5z1bMg4VQqztUglHZXIBj4JkU3cOY";
+              const key = "&key=put key here";
               const url = `https://www.googleapis.com/books/v1/volumes?q=intitle:${encodedSearchQuery}${key}`;
 
               fetch(url)
